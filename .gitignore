@@ -3,9 +3,9 @@ assets/js/lib/paperjs/docs
 assets/js/lib/paperjs/examples
 assets/js/lib/paperjs/LICENSE.txt
 assets/js/lib/howlerjs/examples
-assets/js/lib/howler/tests
-assets/js/lib/howler/src
-assets/js/lib/howler/bower.json
+assets/js/lib/howlerjs/tests
+assets/js/lib/howlerjs/src
+assets/js/lib/howlerjs/bower.json
 assets/js/lib/howlerjs/CHANGELOG.md
 assets/js/lib/howlerjs/LICENSE.md
 assets/js/lib/howlerjs/package.json
