@@ -1,10 +1,10 @@
 .DS_Store
-assets/js/lib/paperjs/docs/
-assets/js/lib/paperjs/examples/
+assets/js/lib/paperjs/docs
+assets/js/lib/paperjs/examples
 assets/js/lib/paperjs/LICENSE.txt
-assets/js/lib/howler/examples/
-assets/js/lib/howler/tests/
-assets/js/lib/howler/src/
+assets/js/lib/howlerjs/examples
+assets/js/lib/howler/tests
+assets/js/lib/howler/src
 assets/js/lib/howler/bower.json
 assets/js/lib/howlerjs/CHANGELOG.md
 assets/js/lib/howlerjs/LICENSE.md
