@@ -8,15 +8,10 @@
 //  // Note the plus operator on Point objects.
 //  // PaperScript does that for us, and much more!
 //  path.lineTo(start + [500, -50]);
-var x = 0;
-var y = 0;
 
-for (i = 0; i < 10; i++) {
-    for (j = 0; j < 10; j++) {
+for (x = 0; x < 1000; x += 100) {
+    for (y = 0; y < 1000; y += 100) {
         new Path.Circle(new Point(x, y), 10).fillColor = 'orange';
         // console.log(x + " " + y);
-        y += 100;
     }
-    y = 0;
-    x += 100;
 }
