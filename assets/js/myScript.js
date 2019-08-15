@@ -40,7 +40,97 @@ var keyData = {
         sound: new Howl({
             src: ['assets/sounds/flash-3.mp3']
         })
-    }
+    },
+    l: {
+        sound: new Howl({
+            src: ['assets/sounds/glimmer.mp3']
+        })
+    },
+    z: {
+        sound: new Howl({
+            src: ['assets/sounds/moon.mp3']
+        })
+    },
+    x: {
+        sound: new Howl({
+            src: ['assets/sounds/pinwheel.mp3']
+        })
+    },
+    c: {
+        sound: new Howl({
+            src: ['assets/sounds/piston-1.mp3']
+        })
+    },
+    v: {
+        sound: new Howl({
+            src: ['assets/sounds/piston-2.mp3']
+        })
+    },
+    b: {
+        sound: new Howl({
+            src: ['assets/sounds/piston-3.mp3']
+        })
+    },
+    n: {
+        sound: new Howl({
+            src: ['assets/sounds/prism-1.mp3']
+        })
+    },
+    m: {
+        sound: new Howl({
+            src: ['assets/sounds/prism-2.mp3']
+        })
+    },
+    q: {
+        sound: new Howl({
+            src: ['assets/sounds/prism-3.mp3']
+        })
+    },
+    w: {
+        sound: new Howl({
+            src: ['assets/sounds/splits.mp3']
+        })
+    },
+    e: {
+        sound: new Howl({
+            src: ['assets/sounds/squiggle.mp3']
+        })
+    },
+    r: {
+        sound: new Howl({
+            src: ['assets/sounds/strike.mp3']
+        })
+    },
+    t: {
+        sound: new Howl({
+            src: ['assets/sounds/suspension.mp3']
+        })
+    },
+    y: {
+        sound: new Howl({
+            src: ['assets/sounds/timer.mp3']
+        })
+    },
+    u: {
+        sound: new Howl({
+            src: ['assets/sounds/ufo.mp3']
+        })
+    },
+    i: {
+        sound: new Howl({
+            src: ['assets/sounds/veil.mp3']
+        })
+    },
+    o: {
+        sound: new Howl({
+            src: ['assets/sounds/wipe.mp3']
+        })
+    },
+    p: {
+        sound: new Howl({
+            src: ['assets/sounds/zig-zag.mp3']
+        })
+    },
 }
 
 function onKeyDown(e) {
@@ -59,7 +149,6 @@ function onKeyDown(e) {
         // add circle to array.
         circle.push(newCircle);
     }
-    console.log(circle.length);
 }
 
 // var animatedCircle = new Path.Circle(new Point(300, 300), 100);
@@ -69,6 +158,11 @@ function onFrame(e) {
     for (i = 0; i < circle.length; i++) {
         circle[i].fillColor.hue += 1;
         circle[i].scale(.9);
+        if (circle[i].area < 1) {
+            circle[i].remove(); // remove the circle from the canvas
+            circle.splice(i, 1); // remove the circle from the array
+            console.log(circle);
+        }
     }
 }
 
