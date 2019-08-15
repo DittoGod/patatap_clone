@@ -161,7 +161,7 @@ function onFrame(e) {
         if (circle[i].area < 1) {
             circle[i].remove(); // remove the circle from the canvas
             circle.splice(i, 1); // remove the circle from the array
-            console.log(circle);
+            // console.log(circle);
         }
     }
 }
